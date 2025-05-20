@@ -98,7 +98,7 @@ tokenizer = PreTrainedTokenizerFast(tokenizer_file="trained_tokenizer.json")
 if tokenizer.pad_token is None:
     tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 
-with open("final_enriched_dataset_original_format.json", "r", encoding="utf-8") as f:
+with open("turkish_QA_law_dataset.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 
