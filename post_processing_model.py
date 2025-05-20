@@ -176,7 +176,7 @@ def predict_answer(model, tokenizer, question, context, device, max_length=512):
 question = "TCK temel amacı nedir?"
 context=None
 
-with open("final_enriched_dataset_original_format.json", "r", encoding="utf-8") as f:
+with open("turkish_QA_law_dataset.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 for i in data:
