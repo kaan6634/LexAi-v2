@@ -13,7 +13,7 @@ from groq import Groq
 from deep_translator import GoogleTranslator
 
 
-client = Groq(api_key="groq API KEY")
+client = Groq(api_key="api_key_here")  # Replace with your actual API key
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -173,7 +173,7 @@ def predict_answer(model, tokenizer, question, context, device, max_length=512):
 
         return answer
 
-question = "TCK temel amacı nedir?"
+question = "Lexai nedir?"
 context=None
 
 with open("turkish_QA_law_dataset.json", "r", encoding="utf-8") as f:
