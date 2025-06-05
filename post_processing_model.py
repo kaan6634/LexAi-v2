@@ -14,7 +14,7 @@ from torch.utils.data import DataLoader, Dataset
 from groq import Groq
 from deep_translator import GoogleTranslator
 
-client = Groq(api_key="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")  # Replace with your actual API key
+client = Groq(api_key="API_KEY")  # Replace with your actual API key
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
